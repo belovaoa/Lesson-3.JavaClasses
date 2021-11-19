@@ -63,5 +63,17 @@ public class WorkSpace {
 
         System.out.println("Too lazy to talk about " + batMobile.brand + ", " + gotham.cityName + " and " +
                 jamesBond.name + "...");
+
+        GetterSetterClass someGetSet = new GetterSetterClass();
+
+        someGetSet.someChar = '%';
+        someGetSet.someInt = 4;
+        someGetSet.someString = "someText";
+
+        System.out.println("");
+        System.out.println("Assigned values in GetterSetterClass:");
+        System.out.println("someChar: " + someGetSet.getSomeChar());
+        System.out.println("someInt: " + someGetSet.getSomeInt());
+        System.out.println("someString: " + someGetSet.getSomeString());
     }
 }
