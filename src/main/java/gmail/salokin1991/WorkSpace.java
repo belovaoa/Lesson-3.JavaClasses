@@ -13,10 +13,11 @@ public class WorkSpace {
         char gothamFlag = '&';
         char londonFlag = '#';
 
-        Character batMan = new Character(batmanName, gothamName, batMobileName, gothamFlag, 40, 185, 85,
-                "Batgun");
-        Character jamesBond = new Character(jamesName, londonName, astonMartinName, londonFlag, 35, 189,
-                79, "Walther PPK");
+        Character batMan = new Character(batmanName, gothamName, batMobileName, gothamFlag, "Batgun");
+        Character jamesBond = new Character(jamesName, londonName, astonMartinName, londonFlag, "Walther PPK");
+
+        Character.NumericalInformation batManNum = new Character.NumericalInformation(40, 185, 85);
+        Character.NumericalInformation jamesBondNum = new Character.NumericalInformation(35, 189, 79);
 
         Vehicle batMobile = new Vehicle(batMobileName, batmanName, gothamFlag, 100500, 1989,
                 "Black", 69, false);
@@ -37,9 +38,9 @@ public class WorkSpace {
         batMan.sayCharacterCity();
         batMan.sayCharacterVehicle();
         batMan.sayCharacterTattoo();
-        batMan.sayCharacterAge();
-        batMan.sayCharacterHeight();
-        batMan.sayCharacterWeight();
+        batManNum.sayCharacterAge();
+        batManNum.sayCharacterHeight();
+        batManNum.sayCharacterWeight();
         batMan.sayCaracterWeapon();
 
         System.out.println(" ");
@@ -70,7 +71,7 @@ public class WorkSpace {
 
         System.out.println(" ");
         System.out.println("Too lazy to talk about " + batMobile.brand + ", " + gotham.cityName + " and " +
-                jamesBond.name + "...");
+                jamesBond.name + "..." + "I can only say that he is " + jamesBondNum.age + " years old");
 
         GetterSetterClass someGetSet = new GetterSetterClass();
 
