@@ -75,5 +75,15 @@ public class WorkSpace {
         System.out.println("someChar: " + someGetSet.getSomeChar());
         System.out.println("someInt: " + someGetSet.getSomeInt());
         System.out.println("someString: " + someGetSet.getSomeString());
+
+        someGetSet.setSomeChar('*');
+        someGetSet.setSomeInt(69);
+        someGetSet.setSomeString("anotherSomeText");
+
+        System.out.println("");
+        System.out.println("Assigned new values in GetterSetterClass:");
+        System.out.println("someChar: " + someGetSet.getSomeChar());
+        System.out.println("someInt: " + someGetSet.getSomeInt());
+        System.out.println("someString: " + someGetSet.getSomeString());
     }
 }
