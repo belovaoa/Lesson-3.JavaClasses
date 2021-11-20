@@ -23,11 +23,15 @@ public class WorkSpace {
         Vehicle astonMartin = new Vehicle(astonMartinName, jamesName, londonFlag, 241, 1964,
                 "Silver", 0, true);
 
-        City gotham = new City(gothamName, batmanName, gothamFlag, "DC universe", 8405837,
-                5924, 1215, false, false);
-        City london = new City(londonName, jamesName, londonFlag, "England", 8961989,
-                0, 1572, true, true);
+        City gotham = new City(gothamName, batmanName, gothamFlag, "DC universe",/* 8405837,
+                5924, 1215,*/ false, false);
+        City london = new City(londonName, jamesName, londonFlag, "England",/* 8961989,
+                0, 1572,*/ true, true);
 
+        City.Statistic londonStatistic = new City.Statistic(8961989, 0,
+                1572);
+
+        System.out.println(" ");
         System.out.println("About " + batMan.name + ":");
         batMan.sayCharacterName();
         batMan.sayCharacterCity();
@@ -38,19 +42,21 @@ public class WorkSpace {
         batMan.sayCharacterWeight();
         batMan.sayCaracterWeapon();
 
+        System.out.println(" ");
         System.out.println("About " + london.cityName + ":");
         london.sayCityName();
         london.sayCityResidentName();
         london.sayCityFlag();
-        london.sayCityPopulation();
-        london.sayCityNumberOfSkyscrapers();
-        london.sayCityArea();
+        londonStatistic.sayCityPopulation();
+        londonStatistic.sayCityNumberOfSkyscrapers();
+        londonStatistic.sayCityArea();
         london.sayCityCapital();
         london.sayCityReality();
-        london.sayCityPopulationDensity();
-        london.changeCityPopulationIfOneIsBorn();
-        london.changeCityPopulationIfOneIsBurn();
+        londonStatistic.sayCityPopulationDensity();
+        londonStatistic.changeCityPopulationIfOneIsBorn();
+        londonStatistic.changeCityPopulationIfOneIsBurn();
 
+        System.out.println(" ");
         System.out.println("About " + astonMartin.brand + ":");
         astonMartin.sayVehicleBrand();
         astonMartin.sayVehicleOwner();
@@ -61,6 +67,7 @@ public class WorkSpace {
         astonMartin.sayVehicleFuelConsumption();
         astonMartin.sayVehicleInsurance();
 
+        System.out.println(" ");
         System.out.println("Too lazy to talk about " + batMobile.brand + ", " + gotham.cityName + " and " +
                 jamesBond.name + "...");
 
@@ -70,7 +77,7 @@ public class WorkSpace {
         someGetSet.someInt = 4;
         someGetSet.someString = "someText";
 
-        System.out.println("");
+        System.out.println(" ");
         System.out.println("Assigned values in GetterSetterClass:");
         System.out.println("someChar: " + someGetSet.getSomeChar());
         System.out.println("someInt: " + someGetSet.getSomeInt());
@@ -80,7 +87,7 @@ public class WorkSpace {
         someGetSet.setSomeInt(69);
         someGetSet.setSomeString("anotherSomeText");
 
-        System.out.println("");
+        System.out.println(" ");
         System.out.println("Assigned new values in GetterSetterClass:");
         System.out.println("someChar: " + someGetSet.getSomeChar());
         System.out.println("someInt: " + someGetSet.getSomeInt());
