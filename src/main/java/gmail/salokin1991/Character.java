@@ -34,7 +34,7 @@ public class Character {
     }
 
     public void sayCharacterVehicle() {
-        System.out.println(city);
+        System.out.println(vehicle);
     }
 
     public void sayCharacterTattoo() {
