@@ -23,13 +23,13 @@ public class WorkSpace {
         Vehicle astonMartin = new Vehicle(astonMartinName, jamesName, londonFlag, 241, 1964,
                 "Silver", 0, true);
 
-        City gotham = new City(gothamName, batmanName, gothamFlag, "DC universe",/* 8405837,
-                5924, 1215,*/ false, false);
-        City london = new City(londonName, jamesName, londonFlag, "England",/* 8961989,
-                0, 1572,*/ true, true);
+        City gotham = new City(gothamName, batmanName, gothamFlag, "DC universe", false, false);
+        City london = new City(londonName, jamesName, londonFlag, "England", true, true);
 
         City.Statistic londonStatistic = new City.Statistic(8961989, 0,
                 1572);
+        City.Statistic gothamStatistic = new City.Statistic(8961989,
+                0, 1572);
 
         System.out.println(" ");
         System.out.println("About " + batMan.name + ":");
@@ -55,6 +55,7 @@ public class WorkSpace {
         londonStatistic.sayCityPopulationDensity();
         londonStatistic.changeCityPopulationIfOneIsBorn();
         londonStatistic.changeCityPopulationIfOneIsBurn();
+        gothamStatistic.changeCityPopulationIfOneIsBurn();
 
         System.out.println(" ");
         System.out.println("About " + astonMartin.brand + ":");
