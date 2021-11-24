@@ -28,10 +28,8 @@ public class WorkSpace {
 
         City gotham = new City(gothamName, batmanName, gothamFlag, "DC universe", false, false);
         City london = new City(londonName, jamesName, londonFlag, "England", true, true);
-        City.Statistic londonStatistic = new City.Statistic(8961989, 0,
-                1572);
-        City.Statistic gothamStatistic = new City.Statistic(8961989,
-                0, 1572);
+        City.Statistic londonStatistic = new City.Statistic(8961989, 0, 1572);
+        City.Statistic gothamStatistic = new City.Statistic(8961989, 0, 1572);
 
 
         System.out.println(" ");
