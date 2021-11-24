@@ -24,6 +24,7 @@ public class Vehicle {
         this.insurance = insurance;
     }
 
+
     public void sayVehicleBrand() {
         System.out.println(brand);
     }

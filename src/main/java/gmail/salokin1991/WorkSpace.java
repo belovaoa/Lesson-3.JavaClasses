@@ -41,7 +41,7 @@ public class WorkSpace {
         batManNum.sayCharacterAge();
         batManNum.sayCharacterHeight();
         batManNum.sayCharacterWeight();
-        batMan.sayCharacterWeapon();
+        batMan.sayCaracterWeapon();
 
         System.out.println(" ");
         System.out.println("About " + london.cityName + ":");

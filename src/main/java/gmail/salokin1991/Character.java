@@ -61,7 +61,8 @@ public class Character {
         System.out.println(tattoo);
     }
 
-    public void sayCharacterWeapon() {
+
+    public void sayCaracterWeapon() {
         System.out.println(weapon);
     }
 }
