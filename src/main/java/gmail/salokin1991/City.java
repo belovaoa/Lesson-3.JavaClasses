@@ -89,5 +89,4 @@ public class City {
     public void sayCityReality() {
         System.out.println("It's " + reality);
     }
-
 }
