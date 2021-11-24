@@ -8,7 +8,7 @@ public class WorkSpace {
         String jamesName = "James Bond";
         String gothamName = "Gotham";
         String londonName = "London";
-        String batMobileName = "Batmobile";
+        String batMobileName = "Super Batmobile";
         String astonMartinName = "Aston Martin DB5";
         char gothamFlag = '&';
         char londonFlag = '#';
