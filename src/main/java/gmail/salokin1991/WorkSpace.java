@@ -8,29 +8,29 @@ public class WorkSpace {
         String jamesName = "James Bond";
         String gothamName = "Gotham";
         String londonName = "London";
-        String batMobileName = "Batmobile";
+        String batMobileName = "Super Batmobile";
         String astonMartinName = "Aston Martin DB5";
         char gothamFlag = '&';
         char londonFlag = '#';
 
-
         Character batMan = new Character(batmanName, gothamName, batMobileName, gothamFlag, "Batgun");
         Character jamesBond = new Character(jamesName, londonName, astonMartinName, londonFlag, "Walther PPK");
+
         Character.NumericalInformation batManNum = new Character.NumericalInformation(40, 185, 85);
         Character.NumericalInformation jamesBondNum = new Character.NumericalInformation(35, 189, 79);
-
 
         Vehicle batMobile = new Vehicle(batMobileName, batmanName, gothamFlag, 100500, 1989,
                 "Black", 69, false);
         Vehicle astonMartin = new Vehicle(astonMartinName, jamesName, londonFlag, 241, 1964,
                 "Silver", 0, true);
 
-
         City gotham = new City(gothamName, batmanName, gothamFlag, "DC universe", false, false);
         City london = new City(londonName, jamesName, londonFlag, "England", true, true);
-        City.Statistic londonStatistic = new City.Statistic(8961989, 0, 1572);
-        City.Statistic gothamStatistic = new City.Statistic(8961989, 0, 1572);
 
+        City.Statistic londonStatistic = new City.Statistic(8961989, 0,
+                1572);
+        City.Statistic gothamStatistic = new City.Statistic(8961989,
+                0, 1572);
 
         System.out.println(" ");
         System.out.println("About " + batMan.name + ":");
